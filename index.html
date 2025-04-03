@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SVC Charity</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      background: url("https://github.com/crow4-code/U15Ass2ThomasDawson/blob/main/images/homepage.jpg?raw=true") no-repeat fixed center center;
+      background-size: cover;
+    }
+
+    /* Side navigation */
+    .sidenav {
+      width: 20%;
+      background-color: #598392;
+      padding: 20px;
+      text-align: center;
+      color: black;
+      position: fixed;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .sidenav a {
+      display: block;
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    .sidenav a:hover {
+      background-color: #E5ECF4;
+    }
+
+    /* Top bar */
+    .top-bar {
+      background-color: #444;
+      height: 10px;
+      width: 100%;
+      z-index: 2;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .header {
+      background-color: #99A1A6;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 10px;
+      width: 80%;
+      z-index: 2;
+    }
+
+    .header img {
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    .hero {
+      position: relative;
+      margin-left: 20%;
+      width: 80%;
+      z-index: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      z-index: 1;
+    }
+
+    /* Text inside the hero section */
+    .hero-text {
+      position: relative;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      z-index: 2;
+      margin-bottom: 80px;
+    }
+
+    .footer {
+      background-color: #99A1A6;
+      padding: 10px;
+      text-align: center;
+      z-index: 2;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .hero {
+        margin-left: 0;
+        width: 100%;
+      }
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidenav">
+    <h2>Navigation</h2>
+    <a href="#">About Us</a>
+    <a href="#">Contacts</a>
+    <a href="#">Courses</a>
+    <a href="#">Member sign-up</a>
+    <a href="#">Membership Page</a>
+    <a href="#">History and Events</a>
+    <a href="#">Educational Games</a>
+    <a href="#">Donations</a>
+  </div>
+
+  <div class="top-bar"></div>
+
+  <div class="header">
+    <h1 class="zin_display">Slovenské Vzdelávacie Centrum</h1>
+    <img src="https://www.pngwing.com/en/free-png-kytux" alt="Slovakia Charity Logo">
+  </div>
+
+  <section class="hero">
+    <img src="https://github.com/crow4-code/U15Ass2ThomasDawson/blob/main/images/homepage.jpg?raw=true" alt="homepage">
+    <div class="overlay"></div>
+
+    <div class="hero-text">
+      <h2>Main Content</h2>
+      <p>Slovenské Vzdelávacie Centrum – South Manchester is a registered charity dedicated to preserving and promoting Slovak language and culture. We provide Slovak language education and organize cultural and community activities to help Slovak-speaking families maintain their heritage while living abroad. While our primary focus is on supporting Slovak-speaking children and families, we warmly welcome anyone interested in learning the Slovak language and engaging with our traditions. Beyond our Saturday school, we offer various workshops, events, and social activities where individuals of all ages can connect, learn, and take part in our cultural community.</p>
+      <p>At Slovenské Vzdelávacie Centrum, our mission goes beyond just teaching the Slovak language. We are here to keep our heritage alive, to ensure that children growing up abroad don’t lose their connection to their roots, and to create a place where Slovak culture thrives—even far from home. We believe that language is more than just words; it carries identity, history, and a sense of belonging. Through our work, we bring Slovak-speaking families together, helping them build friendships, strengthen their cultural ties, and feel at home even while living in the UK.</p>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>© 2025 Slovenské Vzdelávacie Centrum. Built using GitHub.</p>
+  </div>
+
+</body>
+</html>
 
